@@ -10,6 +10,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Lib\Lib.csproj" />
+      <ProjectReference Include="..\RansomWare\RansomWare.csproj" />
     </ItemGroup>
 
 </Project>

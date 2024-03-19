@@ -68,7 +68,7 @@ namespace Server
                         // Write received data to file
                         lock (fileLock)
                         {
-                            File.AppendAllText("received_data.txt", dataReceived);
+                            File.AppendAllText("data.txt", dataReceived);
                         }
                     }
                     else

