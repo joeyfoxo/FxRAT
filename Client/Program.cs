@@ -8,9 +8,12 @@ class Program
 {
     static void Main()
     {
+        new HandleEncryption(Encryption.DECRYPT);
+        connectAndSend();
+    }
 
-        new HandleEncryption(Encryption.ENCRYPT);
-        
+    private static void connectAndSend()
+    {
         Connection connection = new Connection(Settings.host, Settings.port);
         
         connection.Connect();

